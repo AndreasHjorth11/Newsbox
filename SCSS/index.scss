@@ -1,0 +1,15 @@
+@import "./Common-Blocks/Frontpage/Header/SCSS/_header.scss";
+@import "./Common-Blocks/Frontpage/Navigation/SCSS/_nav.scss";
+@import "./Common-Blocks/Frontpage/Category-Section/SCSS/_category.scss";
+@import "./Common-Blocks/Frontpage/Category-Section/SCSS/_category-items.scss";
+
+@import "./SCSS/_variables.scss";
+
+body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $Snow;
+    overflow: hidden;
+}
+

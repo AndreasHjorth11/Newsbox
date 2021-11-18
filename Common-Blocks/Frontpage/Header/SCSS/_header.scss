@@ -1,0 +1,28 @@
+@import "./SCSS/_variables.scss";
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+
+    .header__title {
+        color: $Drab;
+        font-size: 20px;
+        font-family: europa, sans-serif;
+        font-weight: bold;
+    }
+
+    .header__settings-button {
+        margin-right: 20px;
+        font-size: 20px;
+        color: $Drab;
+    }
+
+    .header__archive-button {
+        margin-left: 20px;
+        font-size: 20px;
+        color: $Drab;
+    }
+}

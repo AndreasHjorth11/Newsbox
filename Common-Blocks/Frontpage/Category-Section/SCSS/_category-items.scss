@@ -1,0 +1,41 @@
+@import "./SCSS/_variables.scss";
+
+.category__items {
+height: 100px;
+
+
+    .item__1-title {
+        font-size: 20px;
+        height: 25px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 31.8%;
+        margin-top: -10px;
+        color: $Drab;
+    }
+
+    .category__article {
+        font-size: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -10px;
+        margin-left: 5%;
+    }
+
+
+    .item__image {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .article__text {
+        width: 180px;
+        font-size: 15px;
+        margin-right: 25%;
+        margin-top: 8%;
+        color: $Slate;
+    }
+}

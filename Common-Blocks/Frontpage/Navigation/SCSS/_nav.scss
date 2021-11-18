@@ -1,0 +1,35 @@
+@import "./SCSS/_variables.scss";
+
+.navigation {
+    height: 70px;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navigation__searchbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .searchbar {
+        width: 80%;
+        height: 50px;
+        text-decoration: none;
+        border: none;
+        background-color: $Ice;
+        border-radius: 5px;
+        padding-left: 30px;
+        font-size: 15px;
+        
+    }
+
+    .searchicon {
+        position: absolute;
+        left: 85%;
+        align-self: center;
+        opacity: 30%;
+    }
+}

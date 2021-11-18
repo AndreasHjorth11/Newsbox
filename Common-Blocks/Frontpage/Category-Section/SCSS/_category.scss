@@ -1,0 +1,49 @@
+@import "./SCSS/_variables.scss";
+
+.category {
+    
+    height: 60px;
+    display: flex;
+    
+    .category__container {
+        display: flex;
+        gap: 15px;
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .category__icon {
+        background-color: $Drab;
+        color: $Snow;
+        box-shadow: $Drab 0px 4px 6px;
+        border-radius: 60px;
+        height: 30px;
+        width: 30px;
+        align-self: center;
+        position: relative;
+        font-size: 20px;
+        padding: 4px
+    }
+
+    .category__icon::before {
+        position: absolute;
+        transform: translate(25% , 30%);
+    }
+
+    .category__title {
+        color: $Drab;
+        font-family: Europa, sans-serif;
+        font-weight: bold;
+    }
+
+    .category__angle-icon {
+        margin-left: 190px;
+    }
+
+    .angle__icon {
+        font-size: 25px;
+        color: $Drab;
+        transform: rotate(90deg);
+    }
+
+}

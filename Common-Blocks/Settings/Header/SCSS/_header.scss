@@ -1,0 +1,38 @@
+@import "./SCSS/_variables.scss";
+
+.settings__header {
+    height: 100px;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    
+
+    .title__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header__title-settings {
+        color: $Drab;
+        font-family: Europa, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        
+    }
+
+    .angle__icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 0;
+    }
+
+    .angle__icon-settings {
+        font-size: 25px;
+        color: $Drab;
+        transform: rotate(180deg);
+        margin-left: 20px;
+    }
+}

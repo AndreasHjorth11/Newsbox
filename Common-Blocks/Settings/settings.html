@@ -11,64 +11,80 @@
 </head>
 <body>
     <header id="header" class="settings__header">
-        <a href="/index.html" style="text-decoration: none;"><div class="angle__icon-container"><i class="fas fa-angle-right angle__icon-settings"></i></div></a>
-        <div class="title__container"><p class="header__title-settings">News Settings</p></div>
+        <a href="/index.html" style="text-decoration: none;"><div class="angle__icon-container"><i class="fas fa-angle-right angle__icon-settings light-color dark-color"></i></div></a>
+        <div class="title__container"><p class="header__title-settings light-color dark-color">News Settings</p></div>
     </header>
     
     <main class="settings__main">
         <section class="settings__mainarea">
-            <p class="main__settings-text">Manage <br><span class="text-font">Categories</span></p>
+            <p class="main__settings-text light-color dark-color">Manage <br><span class="text-font opacity-60 light-color-2 dark-color">Categories</span></p>
         </section>
-    
-        <section class="settings__category-container">
-            <section class="category__selector">
-                <div class="selector__box">
-                    <p class="selector__title">Europe</p>
-                    <label class="selector__switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <hr style="opacity: 30%;">
-                <div class="selector__box">
-                    <p class="selector__title">Health</p>
-                    <label class="selector__switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <hr style="opacity: 30%;">
-                <div class="selector__box">
-                    <p class="selector__title">Sport</p>
-                    <label class="selector__switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <hr style="opacity: 30%;">
-                <div class="selector__box">
-                    <p class="selector__title">Business</p>
-                    <label class="selector__switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <hr style="opacity: 30%;">
-                <div class="selector__box">
-                    <p class="selector__title">Travel</p>
-                    <label class="selector__switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-            </section>
+        
+        <section id="section" class="categoryContainer">
+            <div class="category">
+                <h2 class="category__title">Heading</h2>
+                <button class="category__button">
+                    <div class="category__circle"></div>
+                </button>
+            </div>
+            <div class="category">
+                <h2 class="category__title">Heading</h2>
+                <button class="category__button">
+                    <div class="category__circle"></div>
+                </button>
+            </div> 
+            
         </section>
+            <!-- <section class="category__selector dark-background light-background">
+                <div class="selector__box">
+                    <p class="selector__title dark-color">World</p>
+                    <label class="selector__switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <hr style="opacity: 30%;">
+                <div class="selector__box">
+                    <p class="selector__title dark-color">Health</p>
+                    <label class="selector__switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <hr style="opacity: 30%;">
+                <div class="selector__box">
+                    <p class="selector__title dark-color">Sport</p>
+                    <label class="selector__switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <hr style="opacity: 30%;">
+                <div class="selector__box">
+                    <p class="selector__title dark-color">Business</p>
+                    <label class="selector__switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <hr style="opacity: 30%;">
+                <div class="selector__box">
+                    <p class="selector__title dark-color">Travel</p>
+                    <label class="selector__switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div> -->
+            <!-- </section> -->
 
         <section class="darkmode__container">
-            <button class="darkmode__button">TOGGLE DARK MODE</button>
+            <button class="darkmode__button light-color-3 dark-color dark-background">TOGGLE DARK MODE</button>
         </section>
 
-        <div class="settings__version">Version 4.8.15.16.23.42</div>
+        <div class="settings__version dark-color">Version 4.8.15.16.23.42</div>
     </main>
+    <script src="/Common-Blocks/Settings/Javascript/categoryButton.js"></script>
+    <script src="/Common-Blocks/Settings/Header/Javascript/darkmode.js"></script>
+    <script src="/Common-Blocks/Settings/Javascript/settingsFetch.js"></script>
 </body>
 </html>

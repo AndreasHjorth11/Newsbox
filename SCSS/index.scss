@@ -4,6 +4,7 @@
 @import "./Common-Blocks/Frontpage/Category-Section/SCSS/_category-items.scss";
 @import "./Common-Blocks/Settings/Header/SCSS/_header.scss";
 @import "./Common-Blocks/Settings/Header/SCSS/_mainarea.scss";
+@import "./Common-Blocks/Settings/Header/SCSS/_darkmode.scss";
 
 @import "./SCSS/_variables.scss";
 
@@ -11,7 +12,8 @@ body, html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    // overflow: hidden;
     background-color: $Snow;
-    overflow: hidden;
+    color: $Drab;
 }
 

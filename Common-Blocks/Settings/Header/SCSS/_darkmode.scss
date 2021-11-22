@@ -1,0 +1,72 @@
+@import "./SCSS/_variables.scss";
+
+// .dark-mode[data-theme='dark'] {
+//     transition: ease .4s;
+//     background-color: $Danger;
+
+//     .settings__main {
+//         background-color: $Onyx;  
+//         transition: ease .4s;
+//         height: 800px;
+//         margin-top: 10px;
+//     }
+    
+//     .dark-color {
+//         opacity: 100%;
+//         color: $Snow;
+//     }
+
+//     .dark-background {
+//         background-color: $Drab;
+//         transition: ease .4s;
+//     }
+
+// }
+
+.light-background {
+    background-color: $Snow;
+    transition: ease .4s;
+}
+
+.light-color {
+    color: $Sage;
+    
+}
+
+.light-color-2 {
+    color: $Onyx;
+    
+}
+
+.light-color-3 {
+    color: $Drab;
+    
+}
+
+.opacity-60 {
+    opacity: 60%;
+}
+
+.dark-mode {
+    transition: ease .4s;
+    background-color: $Danger;
+
+    .settings__main {
+        background-color: $Onyx;  
+        transition: ease .4s;
+        height: 800px;
+        margin-top: 10px;
+    }
+    
+    .dark-color {
+        opacity: 100%;
+        color: $Snow;
+    }
+
+    .dark-background {
+        background-color: $Drab;
+        transition: ease .4s;
+    }
+
+}
+

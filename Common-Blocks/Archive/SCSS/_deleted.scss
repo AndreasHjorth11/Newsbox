@@ -1,0 +1,29 @@
+@import "./SCSS/_variables.scss";
+
+
+
+    .deletedItem {
+        background-color: $Danger;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .trashIcon {
+        font-size: 25px;
+        text-shadow: black 1px 1px 15px;
+        color: white;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: flex;
+        justify-content: center;
+    }
+

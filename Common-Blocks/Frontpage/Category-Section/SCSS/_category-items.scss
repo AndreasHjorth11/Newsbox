@@ -1,10 +1,10 @@
 @import "./SCSS/_variables.scss";
 
 .category__items {
-    height: 150px;
+    height: 120px;
     display: grid;
     grid-template-columns: 1fr 40%;
-    grid-auto-rows: 150px;
+    grid-auto-rows: 120px;
     margin-top: 10px;
     transition: height 0.15s ease;
     color: white;
@@ -44,7 +44,7 @@
                                   supported by Chrome, Opera and Firefox */
     }
 
-    .deleteItem {
+    .archiveItem {
         background-color: $Sage;
         grid-column-start: 2;
         grid-column-end: 3;
@@ -57,7 +57,7 @@
 
     
 
-    .archiveItem {
+    .archiveIcon {
         font-size: 25px;
         text-shadow: black 1px 1px 15px;
         color: white;

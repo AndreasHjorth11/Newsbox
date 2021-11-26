@@ -5,11 +5,14 @@ let touchCoordinatesEnd;
 let touchElement;
 let touchParentElement;
 let deleteButton = window.screen.width * 0.4;
+let linkButton = window.screen.width / 0.4;
 let deleteStorage = window.localStorage;
-let userList = [];
+let newsList = [];
 if(localStorage.getItem('deletedItems')){
-    userList = JSON.parse(localStorage.getItem('deletedItems'))
+    newsList = JSON.parse(localStorage.getItem('deletedItems'))
 }
+
+
 
 document.querySelector('main').addEventListener('touchstart', (e) => {
     if (e.target.tagName =="ARTICLE") {
@@ -40,7 +43,7 @@ document.querySelector('main').addEventListener('touchstart', (e) => {
             }
         });
         
-        touchParentElement.querySelector(".deleteItem").onclick = () => {
+        touchParentElement.querySelector(".archiveItem").onclick = () => {
             touchParentElement.classList.add("animate__animated");
             touchParentElement.classList.add("animate__fadeOutLeft");
             
@@ -49,12 +52,12 @@ document.querySelector('main').addEventListener('touchstart', (e) => {
                 name: touchParentElement.querySelector('.swipeItem').textContent
             }
             
-            userList.push(userObject)
+            newsList.push(userObject)
 
             
-            console.log(userList);
-            localStorage.setItem('deletedItems', JSON.stringify(userList));
-            touchParentElement.querySelector(".deleteItem").onclick = null;
+            console.log(newsList);
+            localStorage.setItem('deletedItem', JSON.stringify(newsList));
+            touchParentElement.querySelector(".archiveItem").onclick = null;
             
             setTimeout(() => {
                 touchParentElement.classList.add("collapsed");

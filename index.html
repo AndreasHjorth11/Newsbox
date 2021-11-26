@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9b6654b16d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Newsbox</title>
 </head>
 <body>
     <header id="header" class="header">
-        <i class="fas fa-inbox header__archive-button"></i>
+        <a href="/Common-Blocks/Archive/archive.html"><i class="fas fa-inbox header__archive-button"></i></a>
         <p class="header__title">Newsbox</p>
         <a href="/Common-Blocks/Settings/settings.html"><i class="fas fa-cog header__settings-button"></i></a>
     </header>
-    <hr style="opacity: 50%;">
+    <hr class="hr-1">
 
     <nav id="nav" class="navigation">
         <form class="navigation__searchbar" method="GET">
@@ -36,17 +37,20 @@
             </div>
         </section>
         <hr style="opacity: 30%;">
+        <div id="link">
+            <!-- <section class="category__items">
+                <div class="item__1-title">
+                    <p>Headline</p>
+                </div>
+                <article class="category__article">
+                    <img class="item__image" src="/Assets/Images/105-1057578_n-blem-logo-png-transparent-logo-de-una.png" alt="">
+                    <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+            </section>
+            <!-->
+        </div>
         
-        <!-- <section class="category__items">
-            <div class="item__1-title">
-                <p>Headline</p>
-            </div>
-            <article class="category__article">
-                <img class="item__image" src="/Assets/Images/105-1057578_n-blem-logo-png-transparent-logo-de-una.png" alt="">
-                <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-        </section>
-        <hr style="opacity: 30%;">
+        <!-- <hr style="opacity: 30%;">
     
         <section class="category__items">
             <div class="item__1-title">
@@ -83,5 +87,6 @@
     </main>
 <script src="/Common-Blocks/Frontpage/Category-Section/Javascript/fetch.js"></script>
 <script src="/Common-Blocks/Frontpage/Category-Section/Javascript/interaction.js"></script>
+
 </body>
 </html>

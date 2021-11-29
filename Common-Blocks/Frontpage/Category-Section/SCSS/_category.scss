@@ -5,17 +5,30 @@
     opacity: 50%;
 }
 
+
+.categoryBox {
+    display: flex;
+    justify-content: center;
+}
+
+.categoryContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 85%;
+}
 .category {
     
     height: 60px;
     display: flex;
-    
+
     .category__container {
         display: flex;
         gap: 15px;
         margin-left: 20px;
         align-items: center;
     }
+    
 
     .category__icon {
         background-color: $Drab;
@@ -38,7 +51,8 @@
     .category__title {
         color: $Drab;
         font-family: Europa, sans-serif;
-        font-weight: bold;
+        font-weight: 500;
+        text-transform: capitalize;
     }
 
     .category__angle-icon {
@@ -51,4 +65,8 @@
         transform: rotate(90deg);
     }
 
+}
+
+.main__settings-text {
+    height: -10px;
 }

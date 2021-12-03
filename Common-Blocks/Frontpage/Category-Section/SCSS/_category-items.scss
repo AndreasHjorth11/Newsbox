@@ -17,58 +17,10 @@
     .category__items > * {
         display: flex;
         align-items: center;
-        
-    }
-
-    .swipeItem {
-    background-color: $Drab;
-    display: flex;
-    align-items: center;
-    position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding: 20px;
-    cursor: pointer;
-    transition: transform 0.10s ease;
-    font-size: 18px;
-    font-family: 'Baloo Chettan 2';
-    justify-content: space-between;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
-    }
-
-    .archiveItem {
-        background-color: $Sage;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     
-
-    .archiveIcon {
-        font-size: 25px;
-        text-shadow: black 1px 1px 15px;
-        color: white;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        display: flex;
-        justify-content: center;
-    }
-
+    
     .item__1-title {
         font-size: 20px;
         height: 25px;
@@ -78,29 +30,79 @@
         margin-top: -10px;
         color: $Drab;
     }
-
+    
     // .category__article {
-    //     font-size: 10px;
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     margin-top: -10px;
-    //     margin-left: 5%;
-    // }
-
-
-    // .item__image {
-    //     height: 80px;
-    //     width: 80px;
-    //     border-radius: 50%;
-    // }
-
-    // .article__text {
-    //     width: 180px;
-    //     font-size: 15px;
-    //     margin-right: 25%;
-    //     margin-top: 8%;
-    //     color: $Slate;
-    // }
-}
+        //     font-size: 10px;
+        //     width: 100%;
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     margin-top: -10px;
+        //     margin-left: 5%;
+        // }
+        
+        
+        // .item__image {
+            //     height: 80px;
+            //     width: 80px;
+            //     border-radius: 50%;
+            // }
+            
+            // .article__text {
+                //     width: 180px;
+                //     font-size: 15px;
+                //     margin-right: 25%;
+                //     margin-top: 8%;
+                //     color: $Slate;
+                // }
+                .swipeItem {
+                background-color: $Drab;
+                display: flex;
+                align-items: center;
+                position: relative;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding: 20px;
+                cursor: pointer;
+                transition: transform 0.10s ease;
+                font-size: 18px;
+                font-family: 'Baloo Chettan 2';
+                justify-content: space-between;
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                 -khtml-user-select: none; /* Konqueror HTML */
+                   -moz-user-select: none; /* Old versions of Firefox */
+                    -ms-user-select: none; /* Internet Explorer/Edge */
+                        user-select: none; /* Non-prefixed version, currently
+                                              supported by Chrome, Opera and Firefox */
+                }
+            }
+            
+            .archiveItem {
+                background-color: $Sage;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 20px;
+            }
+            
+            
+            
+            .archiveIcon {
+                font-size: 25px;
+                text-shadow: black 1px 1px 15px;
+                color: $Snow;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 2;
+                display: flex;
+                justify-content: center;
+            }

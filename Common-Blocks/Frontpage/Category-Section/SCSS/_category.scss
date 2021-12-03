@@ -5,6 +5,73 @@
     opacity: 50%;
 }
 
+.sectionContainer {
+
+}
+
+.category {
+    border-bottom: solid thin;
+    
+}
+.divContainer {
+    display: none;
+    
+}
+
+.display-block {
+    display: block;
+    
+}
+.categoryNews {
+    background-color: $Drab;
+    margin-top: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.category__container {
+    flex-basis: 95%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+
+
+.newsImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.articleTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 10px;
+    font-size: 20px;
+    color: $Ice;
+}
+
+.articleText {
+    color: $Snow;
+}
+
+.articleDiv {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 
 .categoryBox {
     display: flex;
@@ -19,15 +86,8 @@
 }
 .category {
     
-    height: 60px;
+    height: 80px;
     display: flex;
-
-    .category__container {
-        display: flex;
-        gap: 15px;
-        margin-left: 20px;
-        align-items: center;
-    }
     
 
     .category__icon {
@@ -40,7 +100,8 @@
         align-self: center;
         position: relative;
         font-size: 20px;
-        padding: 4px
+        padding: 4px;
+        margin-left: 15px;
     }
 
     .category__icon::before {
@@ -48,11 +109,12 @@
         transform: translate(25% , 30%);
     }
 
-    .category__title {
+    .category__title-front {
         color: $Drab;
         font-family: Europa, sans-serif;
-        font-weight: 500;
+        font-weight: bold;
         text-transform: capitalize;
+        flex: 1;
     }
 
     .category__angle-icon {
@@ -62,7 +124,12 @@
     .angle__icon {
         font-size: 25px;
         color: $Drab;
-        transform: rotate(90deg);
+        transition: .4s;
+    }
+
+    .rotate {
+        transition: .4s;
+        transform:rotate(90deg);;
     }
 
 }

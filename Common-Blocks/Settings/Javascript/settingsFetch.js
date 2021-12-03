@@ -14,13 +14,13 @@ axios.get(url).then(response => {
     console.log(categoryArray);
 
     categoryArray.forEach((cat) => {
-        if(cat === 'world' || cat === 'sports' || cat === 'business' || cat === 'health') {
+        if(cat === 'world' || cat === 'sports' || cat === 'business' || cat === 'health' || cat === 'movies' || cat === 'arts' || cat === 'magazine' || cat === 'technology') {
             const wrapper = document.createElement("div");
             wrapper.classList.add("category");
             section.appendChild(wrapper);
 
             const heading = document.createElement("h2");
-            heading.classList.add("category__title")
+            heading.classList.add("categoryTitle")
             heading.textContent = cat;
             wrapper.appendChild(heading)
 

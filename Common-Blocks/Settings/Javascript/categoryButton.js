@@ -4,23 +4,18 @@ let selectedCategory = [];
 section.addEventListener("click", (e) => {
     const target = e.target;
     const targetParent = target.parentElement;
-    const targetCat = targetParent.parentElement;
-    console.log(targetCat);
+    const targetCat = targetParent.closest('.category').textContent;
     if (target.classList.contains("category__circle")) {
         targetParent.classList.toggle("category__button_active");
         target.classList.toggle("category__circle_active");
 
-        const catObject = {
-            category: "targetCat",
-            enable: target.toggleAttribute('enable'),
-        }
-
-        console.log(catObject);
-
-        selectedCategory = selectedCategory.filter((obj => catObject.category !== obj.category))
-        if(catObject.enable === true) {
-            selectedCategory.push(catObject);
-        }
+        
+        selectedCategory = selectedCategory.filter((array) => targetCat !== array);
+        if(target.toggleAttribute('enable') === true) {
+            selectedCategory.push(targetCat)
+            
+        };
+        console.log(selectedCategory);
 
         localStorage.setItem("selectedCategories", JSON.stringify(selectedCategory));
     }

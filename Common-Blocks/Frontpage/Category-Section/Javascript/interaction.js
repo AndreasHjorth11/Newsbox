@@ -12,16 +12,26 @@ if(localStorage.getItem('deletedItems')){
     newsList = JSON.parse(localStorage.getItem('deletedItems'))
 }
 
+document.querySelector('main').addEventListener('click', (e) => {
+    const target = e.target;
 
+    if (target.classList.contains("angle__icon")) {
+        target.classList.toggle("rotate");
+        section = target.closest(".sectionContainer");
+        console.log(section)
+        section.querySelector(".divContainer").classList.toggle("display-block");
+    }
+
+})
 
 document.querySelector('main').addEventListener('touchstart', (e) => {
-    if (e.target.tagName =="ARTICLE") {
+    if (e.target.tagName =="SECTION") {
         touchElement = e.target;
-        touchParentElement = e.target.closest("section");
+        touchParentElement = e.target.closest(".categoryNews");
         touchCoordinatesStart = e.touches[0].clientX;
     
         touchElement.addEventListener("touchmove", (e) => {
-            if (touchElement.tagName == "ARTICLE"){
+            if (touchElement.tagName == "SECTION"){
                 touchCoordinatesMove = Math.floor(e.touches[0].clientX);
                 if (touchCoordinatesMove < touchCoordinatesStart && 
                     touchCoordinatesMove > touchCoordinatesStart - deleteButton) {
@@ -32,7 +42,7 @@ document.querySelector('main').addEventListener('touchstart', (e) => {
         });
         
         touchElement.addEventListener('touchend', (e) => {
-            if (touchElement.tagName == "ARTICLE"){
+            if (touchElement.tagName == "SECTION"){
                 touchCoordinatesEnd = Math.floor(e.changedTouches[0].clientX);
                 if (touchCoordinatesEnd < touchCoordinatesStart - deleteButton / 2 ) {
                     touchElement.style.transform = `translateX(-${deleteButton}px)`;

@@ -5,7 +5,7 @@ recycle.forEach(recycleItem => {
 
     const section = document.createElement('section');
     section.classList.add("category__items")
-    section.setAttribute('id', recycleItem.id);
+    section.setAttribute('id', recycleItem.title);
 
     const categoryTitle = document.createElement('article');
     categoryTitle.classList.add("category__title");

@@ -14,7 +14,7 @@ axios.get(url).then(response => {
     console.log(categoryArray);
 
     categoryArray.forEach((cat) => {
-        if(cat === 'world' || cat === 'sports' || cat === 'business' || cat === 'health' || cat === 'movies' || cat === 'arts' || cat === 'magazine' || cat === 'technology') {
+        if(cat === 'world' || cat === 'sports' || cat === 'business' || cat === 'health' || cat === 'movies' || cat === 'arts' || cat === 'magazine' || cat === 'technology' || cat === 'climate') {
             const wrapper = document.createElement("div");
             wrapper.classList.add("category");
             section.appendChild(wrapper);
